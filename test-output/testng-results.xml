@@ -1,131 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-22T18:20:59 IST" name="Default suite" finished-at="2025-03-22T18:20:59 IST" duration-ms="162">
+  <suite started-at="2025-03-23T16:16:34 IST" name="DemoBlaze suite" finished-at="2025-03-23T16:16:49 IST" duration-ms="15259">
     <groups>
     </groups>
-    <test started-at="2025-03-22T18:20:59 IST" name="Default test" finished-at="2025-03-22T18:20:59 IST" duration-ms="162">
-      <class name="DemoBlazeTestcases.DemoBlazeLoginTc">
-        <test-method is-config="true" signature="readdata_openbrowser(java.lang.String)[pri:0, instance:DemoBlazeTestcases.DemoBlazeLoginTc@66629f63]" started-at="2025-03-22T18:20:59 IST" name="readdata_openbrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1742647859623" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method readdata_openbrowser but has not been marked @Optional or defined
-in C:\Users\anand\AppData\Local\Temp\testng-eclipse--926719104\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method readdata_openbrowser but has not been marked @Optional or defined
-in C:\Users\anand\AppData\Local\Temp\testng-eclipse--926719104\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:272)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
-at org.testng.internal.Parameters.createParameters(Parameters.java:704)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2025-03-23T16:16:34 IST" name="adding_multiple_productTest" finished-at="2025-03-23T16:16:49 IST" duration-ms="15259">
+      <class name="DemoBlazeTestcases.Add_multiple_productsTC">
+        <test-method is-config="true" signature="readdata_openbrowser(java.lang.String)[pri:0, instance:DemoBlazeTestcases.Add_multiple_productsTC@3c407114]" started-at="2025-03-23T16:16:34 IST" name="readdata_openbrowser" finished-at="2025-03-23T16:16:38 IST" duration-ms="4262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readdata_openbrowser -->
-        <test-method signature="Login_TC_for_invaliddata()[pri:0, instance:DemoBlazeTestcases.DemoBlazeLoginTc@66629f63]" started-at="2025-03-22T18:20:59 IST" name="Login_TC_for_invaliddata" finished-at="2025-03-22T18:20:59 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method readdata_openbrowser but has not been marked @Optional or defined
-in C:\Users\anand\AppData\Local\Temp\testng-eclipse--926719104\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method readdata_openbrowser but has not been marked @Optional or defined
-in C:\Users\anand\AppData\Local\Temp\testng-eclipse--926719104\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:272)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
-at org.testng.internal.Parameters.createParameters(Parameters.java:704)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="Adding_1stproduct_TC()[pri:0, instance:DemoBlazeTestcases.Add_multiple_productsTC@3c407114]" started-at="2025-03-23T16:16:38 IST" name="Adding_1stproduct_TC" finished-at="2025-03-23T16:16:42 IST" duration-ms="4304" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_TC_for_invaliddata -->
-        <test-method signature="Login_TC_for_validdata()[pri:1, instance:DemoBlazeTestcases.DemoBlazeLoginTc@66629f63]" started-at="2025-03-22T18:20:59 IST" name="Login_TC_for_validdata" finished-at="2025-03-22T18:20:59 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method readdata_openbrowser but has not been marked @Optional or defined
-in C:\Users\anand\AppData\Local\Temp\testng-eclipse--926719104\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method readdata_openbrowser but has not been marked @Optional or defined
-in C:\Users\anand\AppData\Local\Temp\testng-eclipse--926719104\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:272)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
-at org.testng.internal.Parameters.createParameters(Parameters.java:704)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- Adding_1stproduct_TC -->
+        <test-method signature="Adding_2nd_productTc()[pri:1, instance:DemoBlazeTestcases.Add_multiple_productsTC@3c407114]" started-at="2025-03-23T16:16:42 IST" name="Adding_2nd_productTc" finished-at="2025-03-23T16:16:45 IST" duration-ms="2995" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_TC_for_validdata -->
-        <test-method is-config="true" signature="close_browser()[pri:0, instance:DemoBlazeTestcases.DemoBlazeLoginTc@66629f63]" started-at="2025-03-22T18:20:59 IST" name="close_browser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1742647859768" status="SKIP">
+        </test-method> <!-- Adding_2nd_productTc -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:DemoBlazeTestcases.Add_multiple_productsTC@3c407114]" started-at="2025-03-23T16:16:45 IST" name="close_browser" finished-at="2025-03-23T16:16:49 IST" duration-ms="3642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_browser -->
-      </class> <!-- DemoBlazeTestcases.DemoBlazeLoginTc -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- DemoBlazeTestcases.Add_multiple_productsTC -->
+    </test> <!-- adding_multiple_productTest -->
+  </suite> <!-- DemoBlaze suite -->
 </testng-results>

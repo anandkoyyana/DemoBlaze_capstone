@@ -16,7 +16,7 @@ import DemoBlazePages.DemoHomePage;
 import DemoBlazePages.DemoLoginPF;
 import DemoBlazePages.DemoSignup;
 
-public class DemoBlazeSignupTc extends Base{
+public class SignupTc extends Base{
 	
 	DemoHomePage dhp;
 	DemoSignup dsp;

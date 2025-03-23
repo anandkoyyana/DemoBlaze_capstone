@@ -15,9 +15,12 @@ public class DemoHomePage {
 	
 	By signup=By.id("signin2");
 	By login=By.id("login2");
+	By home=By.xpath("(//a[@class='nav-link'])[1]");
 	By cart=By.linkText("Cart");
 	By phones=By.linkText("Phones");
-	By product=By.linkText("Samsung galaxy s6");
+	By phone=By.linkText("Samsung galaxy s6");
+	By laptops=By.linkText("Laptops");
+	By laptop=By.linkText("Sony vaio i5");
 	By addtocart=By.xpath("//a[@class='btn btn-success btn-lg']");
 
 	public WebElement signup()
@@ -30,6 +33,10 @@ public class DemoHomePage {
 		return driver.findElement(login);
 	}
 	
+	public WebElement home() 
+	{
+		return driver.findElement(home);
+	}
 	public WebElement cart()
 	{
 		return driver.findElement(cart);
@@ -40,9 +47,9 @@ public class DemoHomePage {
 		return driver.findElement(phones);
 	}
 	
-	public WebElement product()
+	public WebElement phone()
 	{
-		return driver.findElement(product);
+		return driver.findElement(phone);
 	}
 	
 	public WebElement addtocart()
@@ -50,6 +57,14 @@ public class DemoHomePage {
 		return driver.findElement(addtocart);
 	}
 	
-
+	public WebElement laptops()
+	{
+		return driver.findElement(laptops);
+	}
+	public WebElement laptop()
+	{
+		return driver.findElement(laptop);
+	}
+   
 	
 }

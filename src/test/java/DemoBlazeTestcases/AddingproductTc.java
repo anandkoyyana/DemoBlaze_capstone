@@ -1,6 +1,7 @@
 package DemoBlazeTestcases;
 
 import java.io.IOException;
+
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
@@ -13,14 +14,12 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import DemoBlazePages.DemoHomePage;
-import DemoBlazePages.DemoLoginPF;
-import DemoBlazePages.DemoSignup;
 
-public class DemoBlazeAddingproductTc extends Base {
+
+public class AddingproductTc extends Base {
 	
 	DemoHomePage dhp;
-	DemoSignup dsp;
-	DemoLoginPF dlpf;
+	
 	WebDriverWait wait;
 	Config_reader cfr;
 	Extent_report ext;
@@ -62,9 +61,9 @@ public class DemoBlazeAddingproductTc extends Base {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,200)");
 		
-		ext.info("Product is selected");
+		ext.info("Phone is selected");
 		//click on product linktext on home page
-		dhp.product().click();
+		dhp.phone().click();
 		
 		//click on addto cart
 		dhp.addtocart().click();

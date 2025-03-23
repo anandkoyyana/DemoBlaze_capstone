@@ -4,21 +4,29 @@
   <test  name="signupTest">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="DemoBlazeTestcases.DemoBlazeSignupTc"/> 
+      <class name="DemoBlazeTestcases.SignupTc"/> 
     </classes> 
-  </test> <!-- Test -->
+  </test> <!-- Test --> 
   
    <test name="loginTest">
      <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="DemoBlazeTestcases.DemoBlazeLoginTc"/>
+      <class name="DemoBlazeTestcases.LoginTc"/>
     </classes> 
-  </test> <!-- Test -->
+  </test> <!-- Test --> 
   
    <test  name="addingproductTest">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="DemoBlazeTestcases.DemoBlazeAddingproductTc"/> 
+      <class name="DemoBlazeTestcases.AddingproductTc"/> 
+    </classes> 
+  </test> <!-- Test --> 
+  
+     <test  name="adding_multiple_productTest">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="DemoBlazeTestcases.Add_multiple_productsTC"/> 
     </classes> 
   </test> <!-- Test -->
+
 </suite> <!-- Suite -->
