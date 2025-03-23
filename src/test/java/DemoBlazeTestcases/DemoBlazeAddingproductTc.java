@@ -49,12 +49,14 @@ public class DemoBlazeAddingproductTc extends Base {
 	public void Adding_product_TC() 
 	{
 		dhp=new DemoHomePage(driver);
-		//click on phones linktext on home page
-		ext.info("clicked on phones link text");
-		dhp.phones().click();
 		
 		//creating the test with respective test case
 		ext.extent_createtest("DemoBlaze Adding product to cart page");
+		
+		dhp.phones().click();
+		
+		//click on phones linktext on home page
+		ext.info("clicked on phones link text");
 		
 		//scroll vertically by 200 pixels
 		JavascriptExecutor js=(JavascriptExecutor)driver;
