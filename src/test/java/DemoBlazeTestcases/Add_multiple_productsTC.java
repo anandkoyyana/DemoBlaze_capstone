@@ -2,10 +2,14 @@ package DemoBlazeTestcases;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -18,7 +22,7 @@ public class Add_multiple_productsTC extends Base{
 	
 	DemoHomePage dhp;
 	
-	WebDriverWait wait;
+	Wait<WebDriver> wait;
 	Config_reader cfr;
 	Extent_report ext;
 	
@@ -64,12 +68,17 @@ public class Add_multiple_productsTC extends Base{
 		
 		//click on addto cart
 		dhp.addtocart().click();
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+		 wait = new FluentWait<>(driver)
+               .withTimeout(Duration.ofSeconds(40))
+               .pollingEvery(Duration.ofSeconds(3))
+               .ignoring(TimeoutException.class);
+
+		
 		wait.until(ExpectedConditions.elementToBeClickable(dhp.cart()));
 		
 		ext.info("Phone is added to cart");
 		//wait unil alert is present
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alert=driver.switchTo().alert();
 		String text=alert.getText();
@@ -99,7 +108,7 @@ public class Add_multiple_productsTC extends Base{
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,200)");
 		
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 		wait.until(ExpectedConditions.visibilityOf(dhp.laptop()));
 		//click on product linktext on home page
 		dhp.laptop().click();
@@ -107,12 +116,12 @@ public class Add_multiple_productsTC extends Base{
 		ext.info("laptop is selected");
 		//click on addto cart
 		dhp.addtocart().click();
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 		wait.until(ExpectedConditions.elementToBeClickable(dhp.cart()));
 		
 		ext.info("Product is added to cart");
 		//wait unil alert is present
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alert=driver.switchTo().alert();
 		String text=alert.getText();
