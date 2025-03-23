@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoBlaze suite">
+  <test  name="signupTest">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="DemoBlazeTestcases.DemoBlazeSignupTc"/> 
+    </classes> 
+  </test> <!-- Test -->
+  
+   <test name="loginTest">
+     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="DemoBlazeTestcases.DemoBlazeLoginTc"/>
+    </classes> 
+  </test> <!-- Test -->
+  
+   <test  name="addingproductTest">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="DemoBlazeTestcases.DemoBlazeAddingproductTc"/> 
+    </classes> 
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
