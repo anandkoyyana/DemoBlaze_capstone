@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DemoBlazeTestcases.DemoBlazeLoginTc">
+      <class name="DemoBlazeTestcases.Checkout_productTC">
         <methods>
-          <include name="Login_TC_for_invaliddata"/>
           <include name="readdata_openbrowser"/>
-          <include name="Login_TC_for_validdata"/>
-          <include name="close_browser"/>
+          <include name="Checkout_product_TC"/>
         </methods>
-      </class> <!-- DemoBlazeTestcases.DemoBlazeLoginTc -->
+      </class> <!-- DemoBlazeTestcases.Checkout_productTC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

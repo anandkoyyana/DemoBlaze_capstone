@@ -6,27 +6,40 @@
     <classes>
       <class name="DemoBlazeTestcases.SignupTc"/> 
     </classes> 
-  </test> <!-- Test --> 
+  </test>    
   
    <test name="loginTest">
      <parameter name="browser" value="chrome"/>
     <classes>
       <class name="DemoBlazeTestcases.LoginTc"/>
     </classes> 
-  </test> <!-- Test --> 
+  </test>    
   
    <test  name="addingproductTest">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="DemoBlazeTestcases.AddingproductTc"/> 
     </classes> 
-  </test> <!-- Test --> 
+  </test>   
   
      <test  name="adding_multiple_productTest">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="DemoBlazeTestcases.Add_multiple_productsTC"/> 
     </classes> 
-  </test> <!-- Test -->
+  </test>  
+  
+  <test name="checkout_productTest">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+        <class name="DemoBlazeTestcases.Checkout_productTC">
+            <methods>
+                <include name="Adding_product_to_cart" />
+                <include name="Checkout_product_with_invalid" />
+                <include name="Checkout_product_with_valid" />
+            </methods>
+        </class>
+    </classes>
+</test> <!-- Test -->
 
 </suite> <!-- Suite -->
