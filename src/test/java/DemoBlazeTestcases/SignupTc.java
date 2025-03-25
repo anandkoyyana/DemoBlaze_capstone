@@ -72,14 +72,13 @@ public class SignupTc extends Base{
 		dsp.signupbtn().click();
 		ext.info("clicked on sign up button");
 		//wait until alert is present
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alert=driver.switchTo().alert();
 		String text=alert.getText();
 		alert.accept();
 		//verify the both expected and actual text
 		ext.pass_or_fail(text, "Please fill out Username and Password.", "Signup with invalid data");
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 	  	wait.until(ExpectedConditions.elementToBeClickable(dsp.closebtn()));
 		dsp.closebtn().click();
 		
@@ -96,11 +95,7 @@ public class SignupTc extends Base{
 		ext.extent_createtest("DemoBlaze signup page");
 		//click on signup linktext on home page
 		dhp.signup().click();
-		
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
-	  	wait.until(ExpectedConditions.elementToBeClickable(dhp.signup()));
-		
-		
+	
 		//calling constructor
 		dsp=new DemoSignup(driver);
 		
@@ -113,7 +108,6 @@ public class SignupTc extends Base{
 		ext.info("username is Entered");
 		
 		dsp.password().sendKeys(cfr.password);
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.textToBePresentInElementValue(dsp.password(), cfr.password));
 		
 		ext.info("password is Entered");
@@ -121,7 +115,6 @@ public class SignupTc extends Base{
 		dsp.signupbtn().click();
 		ext.info("clicked on sign up button");
 		//wait until alert is present
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alert=driver.switchTo().alert();
 		String text=alert.getText();

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [DemoBlaze suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="loginTest(failed)">
+  <test thread-count="5" name="addingproductTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="DemoBlazeTestcases.LoginTc">
+      <class name="DemoBlazeTestcases.AddingproductTc">
         <methods>
-          <include name="readdata_openbrowser"/>
-          <include name="Login_TC_for_validdata"/>
+          <include name="Adding_product_TC"/>
           <include name="close_browser"/>
+          <include name="readdata_openbrowser"/>
         </methods>
-      </class> <!-- DemoBlazeTestcases.LoginTc -->
+      </class> <!-- DemoBlazeTestcases.AddingproductTc -->
     </classes>
-  </test> <!-- loginTest(failed) -->
+  </test> <!-- addingproductTest(failed) -->
 </suite> <!-- Failed suite [DemoBlaze suite] -->
