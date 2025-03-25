@@ -1,5 +1,7 @@
 package DemoBlazeTestcases;
 
+import static org.testng.Assert.assertEquals;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -35,17 +37,12 @@ public class Extent_report {
 		try
 		{
 			//In extent report, pass or fail will shown based on the condition 
-			if(actual.equals(Expect))
-			{
-				test.log(Status.PASS, msg+" is passed");
-			}
-			else
-			{
-				test.log(Status.FAIL, msg+" is Failed");
-			}
+			assertEquals(actual,Expect);
+			test.log(Status.PASS, msg+" is passed");
 		}
 		catch(Exception e)
 		{
+			test.log(Status.FAIL, msg+" is Failed");
 			e.printStackTrace();
 		}
 	}

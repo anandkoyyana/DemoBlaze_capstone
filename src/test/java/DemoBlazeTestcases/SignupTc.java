@@ -32,15 +32,15 @@ public class SignupTc extends Base{
 	{
 		//Intializing the Config_reader constructor
 		cfr=new Config_reader();
-		
+		//intializing the Extent report constructor
 		ext=new Extent_report();
 		//invoking the browser from base class
 		openbrowser(browser);
-		
+		//creating test in extent report
 		ext.extent_createtest("DemoBlaze Home page");
 		//navigate to the url page
 		driver.navigate().to(cfr.url);
-		
+		//verify the navigated to the specified url
 		ext.pass_or_fail(driver.getTitle(), "STORE", "Navigated to the specified URL");
 			 
 	}
@@ -77,8 +77,8 @@ public class SignupTc extends Base{
 		Alert alert=driver.switchTo().alert();
 		String text=alert.getText();
 		alert.accept();
-		
-		ext.pass_or_fail(text, "Please fill out Username and Password.", "Signup");
+		//verify the both expected and actual text
+		ext.pass_or_fail(text, "Please fill out Username and Password.", "Signup with invalid data");
 		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 	  	wait.until(ExpectedConditions.elementToBeClickable(dsp.closebtn()));
 		dsp.closebtn().click();
@@ -126,8 +126,8 @@ public class SignupTc extends Base{
 		Alert alert=driver.switchTo().alert();
 		String text=alert.getText();
 		alert.accept();
-		
-		ext.pass_or_fail(text, "This user already exist.", "Signup");
+		//verify the both expected and actual text
+		ext.pass_or_fail(text, "This user already exist.", "Signup with valid data");
 		
 		dsp.closebtn().click();
 		

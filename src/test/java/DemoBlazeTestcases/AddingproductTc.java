@@ -72,7 +72,6 @@ public class AddingproductTc extends Base {
 		
 		ext.info("Product is added to cart");
 		//wait unil alert is present
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.alertIsPresent());
 		Alert alert=driver.switchTo().alert();
 		String text=alert.getText();

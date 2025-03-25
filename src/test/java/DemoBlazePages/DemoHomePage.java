@@ -22,7 +22,9 @@ public class DemoHomePage {
 	By laptops=By.linkText("Laptops");
 	By laptop=By.linkText("Sony vaio i5");
 	By addtocart=By.xpath("//a[@class='btn btn-success btn-lg']");
-
+	By nameof_user=By.id("nameofuser");
+	By logout=By.id("logout2");
+	
 	public WebElement signup()
 	{
 		return driver.findElement(signup);
@@ -31,6 +33,11 @@ public class DemoHomePage {
 	public WebElement login()
 	{
 		return driver.findElement(login);
+	}
+	
+	public WebElement logout()
+	{
+		return driver.findElement(logout);
 	}
 	
 	public WebElement home() 
@@ -65,6 +72,10 @@ public class DemoHomePage {
 	{
 		return driver.findElement(laptop);
 	}
-   
+	
+	public WebElement nameof_user()
+	{
+		return driver.findElement(nameof_user);
+	}
 	
 }

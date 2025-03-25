@@ -1,11 +1,11 @@
 package DemoBlazeTestcases;
 
 import java.io.IOException;
+
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
@@ -32,16 +32,15 @@ public class LoginTc extends Base{
 	{
 		//Intializing the Config_reader constructor
 		cfr=new Config_reader();
-		
-		//Intializing the Config_reader constructor
+		//intializing the Extent report constructor
 		ext=new Extent_report();
 		//invoking the browser from base class
 		openbrowser(browser);
-		
+		//creating test in extent report
 		ext.extent_createtest("DemoBlaze Home page");
 		//navigate to the url page
 		driver.navigate().to(cfr.url);
-		 
+		//verify the navigated to the specified url
 		ext.pass_or_fail(driver.getTitle(), "STORE", "Navigated to the specified URL");
 			 
 	}
@@ -81,11 +80,11 @@ public class LoginTc extends Base{
 	  	wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 	  	wait.until(ExpectedConditions.elementToBeClickable(dlpf.closebtn()));
 	    dlpf.closebtn().click();
-	    ext.pass_or_fail(text, "Please fill out Username and Password.", "Login");
-	    
-	    dlpf.closebtn().click();
+	    //verify the both expected and actual text
+	    ext.pass_or_fail(text, "Please fill out Username and Password.", "Login with invalid data");
 	    
 	}
+	
 	@Test (priority=1)
 	public void Login_TC_for_validdata()
 	{
@@ -107,24 +106,20 @@ public class LoginTc extends Base{
 	    ext.info("username is Entered");
 	    
 	    dlpf.password().sendKeys(cfr.password);
-	    wait= new WebDriverWait(driver, Duration.ofSeconds(10));
+	    //wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 	    wait.until(ExpectedConditions.textToBePresentInElementValue(dlpf.password(),cfr.password));
 	   
 	    ext.info("password is Entered");
 	    dlpf.loginbtn().click();
 	    
 	    ext.info("clicked on login button");
-	    wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 	    
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nameofuser")));
-	    WebElement nameofuser=driver.findElement(By.id("nameofuser"));
-	    String name="Welcome "+cfr.username; 
-	    
-	    ext.pass_or_fail(name, nameofuser.getText(), "Login");
-
-	    
+ 	    String text=dhp.nameof_user().getText();
+ 	    //verify the both expected and actual text
+ 	    ext.pass_or_fail(text, "Welcome "+cfr.username, "Login with valid data");
+    
 	}
-
 	
 	
 	@AfterTest

@@ -126,19 +126,12 @@ public class Checkout_productTC extends Base{
 			System.out.println("TestCase Failed");
 		}
 		
-		dcpf.close_btn().click();
 	    
 	}
     
 	@Test (priority=2)
 	public void Checkout_product_with_valid() 
 	{ 
-        //click on phones linktext on home page
-		dcpf.place_order_btn().click();
-		
-		//wait unil purchase text fields is present
-		wait.until(ExpectedConditions.visibilityOf(dcpf.name()));
-		
 		//clear all the fields
 		dcpf.name().clear();
 		dcpf.country().clear();
