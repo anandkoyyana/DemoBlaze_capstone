@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content passed suite-DemoBlaze_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DemoBlaze_suite" title="DemoBlazeTestcases.SignupTc" class="method navigator-link" hash-for-method="Signup_TC_for_Invalid">Signup_TC_for_Invalid</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-DemoBlaze_suite" title="DemoBlazeTestcases.SignupTc" class="method navigator-link" hash-for-method="Signup_TC_for_validdata">Signup_TC_for_validdata</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-DemoBlaze_suite" title="DemoBlazeTestcases.AddingproductTc" class="method navigator-link" hash-for-method="Adding_product_TC">Adding_product_TC</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-DemoBlaze_suite -->
@@ -125,21 +120,14 @@
           <div class="suite-DemoBlaze_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">DemoBlazeTestcases.SignupTc</span>
+              <span class="class-name">DemoBlazeTestcases.AddingproductTc</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Signup_TC_for_Invalid">
-                  </a> <!-- Signup_TC_for_Invalid -->
-                  <span class="method-name">Signup_TC_for_Invalid</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Signup_TC_for_validdata">
-                  </a> <!-- Signup_TC_for_validdata -->
-                  <span class="method-name">Signup_TC_for_validdata</span>
+                  <a name="Adding_product_TC">
+                  </a> <!-- Adding_product_TC -->
+                  <span class="method-name">Adding_product_TC</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -154,12 +142,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;DemoBlaze suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;signupTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;addingproductTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;DemoBlazeTestcases.SignupTc&quot;/&gt;
+      &lt;class name=&quot;DemoBlazeTestcases.AddingproductTc&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- signupTest --&gt;
+  &lt;/test&gt; &lt;!-- addingproductTest --&gt;
 &lt;/suite&gt; &lt;!-- DemoBlaze suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,7 +159,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">signupTest (1 class)</span>
+                <span class="test-name">addingproductTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,20 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Signup_TC_for_validdata')
-data.setCell(0, 2, 'DemoBlazeTestcases.SignupTc')
-data.setCell(0, 3, 2121);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Signup_TC_for_Invalid')
-data.setCell(1, 2, 'DemoBlazeTestcases.SignupTc')
-data.setCell(1, 3, 910);
+data.setCell(0, 1, 'Adding_product_TC')
+data.setCell(0, 2, 'DemoBlazeTestcases.AddingproductTc')
+data.setCell(0, 3, 4509);
 window.suiteTableData['DemoBlaze_suite']= { tableData: data, tableDiv: 'times-div-DemoBlaze_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-DemoBlaze_suite">
               </div> <!-- times-div-DemoBlaze_suite -->
             </div> <!-- times-div -->
@@ -236,22 +220,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">DemoBlazeTestcases.SignupTc</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">DemoBlazeTestcases.AddingproductTc</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">readdata_openbrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">Signup_TC_for_Invalid</span>
-                <span class="method-start">5665 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Signup_TC_for_validdata</span>
-                <span class="method-start">6748 ms</span>
+                <span class="method-name">Adding_product_TC</span>
+                <span class="method-start">12197 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">close_browser</span>
-                <span class="method-start">8878 ms</span>
+                <span class="method-start">16905 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -9,7 +9,7 @@
 	</test>
 
 	<test name="loginTest">
-		<parameter name="browser" value="edge" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="DemoBlazeTestcases.LoginTc" />
 		</classes>
@@ -23,7 +23,7 @@
 	</test>
 
 	<test name="adding_multiple_productTest">
-		<parameter name="browser" value="edge" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="DemoBlazeTestcases.Add_multiple_productsTC" />
 		</classes>
@@ -37,7 +37,7 @@
 	</test> 
 	
 	<test name="logoutTest">
-		<parameter name="browser" value="edge" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="DemoBlazeTestcases.LogoutTC" />
 		</classes>

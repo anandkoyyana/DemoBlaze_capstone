@@ -20,7 +20,7 @@ public class DemoCartPF {
 	  @FindBy(id="card") WebElement card;
 	  @FindBy(id="month") WebElement month;
 	  @FindBy(id="year") WebElement year;
-	  @FindBy(css="button[class='btn btn-success']") WebElement place_order_btn;
+	  @FindBy(xpath="//button[@class='btn btn-success']") WebElement place_order_btn;
 	  @FindBy(xpath="(//button[@class='btn btn-secondary'])[3]") WebElement close_btn;
 	  @FindBy(xpath="(//button[@class='btn btn-primary'])[3]") WebElement purchase_btn;
 	  @FindBy(xpath="//div[@class='sa-icon sa-custom']/following-sibling::h2") WebElement success_text;

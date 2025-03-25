@@ -97,8 +97,6 @@ public class AddingproductTc extends Base {
 		
 		//click on addto cart
 		dhp.addtocart().click();
-		wait= new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(dhp.cart()));
 		
 		ext.info("Product is added to cart");
 		//wait unil alert is present

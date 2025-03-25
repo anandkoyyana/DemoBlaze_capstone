@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T14:35:13 IST" name="DemoBlaze suite" finished-at="2025-03-25T14:35:25 IST" duration-ms="12319">
+  <suite started-at="2025-03-25T17:52:54 IST" name="DemoBlaze suite" finished-at="2025-03-25T17:53:14 IST" duration-ms="20394">
     <groups>
     </groups>
-    <test started-at="2025-03-25T14:35:13 IST" name="signupTest" finished-at="2025-03-25T14:35:25 IST" duration-ms="12319">
-      <class name="DemoBlazeTestcases.SignupTc">
-        <test-method is-config="true" signature="readdata_openbrowser(java.lang.String)[pri:0, instance:DemoBlazeTestcases.SignupTc@53fb3dab]" started-at="2025-03-25T14:35:13 IST" name="readdata_openbrowser" finished-at="2025-03-25T14:35:18 IST" duration-ms="5638" status="PASS">
+    <test started-at="2025-03-25T17:52:54 IST" name="addingproductTest" finished-at="2025-03-25T17:53:14 IST" duration-ms="20394">
+      <class name="DemoBlazeTestcases.AddingproductTc">
+        <test-method is-config="true" signature="readdata_openbrowser(java.lang.String)[pri:0, instance:DemoBlazeTestcases.AddingproductTc@4b013c76]" started-at="2025-03-25T17:52:54 IST" name="readdata_openbrowser" finished-at="2025-03-25T17:53:06 IST" duration-ms="12148" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readdata_openbrowser -->
-        <test-method signature="Signup_TC_for_Invalid()[pri:0, instance:DemoBlazeTestcases.SignupTc@53fb3dab]" started-at="2025-03-25T14:35:18 IST" name="Signup_TC_for_Invalid" finished-at="2025-03-25T14:35:19 IST" duration-ms="910" status="PASS">
+        <test-method signature="Adding_product_TC()[pri:0, instance:DemoBlazeTestcases.AddingproductTc@4b013c76]" started-at="2025-03-25T17:53:06 IST" name="Adding_product_TC" finished-at="2025-03-25T17:53:10 IST" duration-ms="4509" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Signup_TC_for_Invalid -->
-        <test-method signature="Signup_TC_for_validdata()[pri:1, instance:DemoBlazeTestcases.SignupTc@53fb3dab]" started-at="2025-03-25T14:35:19 IST" name="Signup_TC_for_validdata" finished-at="2025-03-25T14:35:21 IST" duration-ms="2121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Signup_TC_for_validdata -->
-        <test-method is-config="true" signature="close_browser()[pri:0, instance:DemoBlazeTestcases.SignupTc@53fb3dab]" started-at="2025-03-25T14:35:21 IST" name="close_browser" finished-at="2025-03-25T14:35:25 IST" duration-ms="3425" status="PASS">
+        </test-method> <!-- Adding_product_TC -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:DemoBlazeTestcases.AddingproductTc@4b013c76]" started-at="2025-03-25T17:53:11 IST" name="close_browser" finished-at="2025-03-25T17:53:14 IST" duration-ms="3476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_browser -->
-      </class> <!-- DemoBlazeTestcases.SignupTc -->
-    </test> <!-- signupTest -->
+      </class> <!-- DemoBlazeTestcases.AddingproductTc -->
+    </test> <!-- addingproductTest -->
   </suite> <!-- DemoBlaze suite -->
 </testng-results>

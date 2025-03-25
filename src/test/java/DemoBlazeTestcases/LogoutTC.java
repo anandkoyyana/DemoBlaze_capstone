@@ -78,8 +78,7 @@ public class LogoutTC extends Base{
 		}
 		
 		dhp.logout().click();
-		
-        wait.until(ExpectedConditions.visibilityOf(dhp.login())); 
+		 
 	}
 	
 	@AfterTest

@@ -21,7 +21,7 @@ public class DemoHomePage {
 	By phone=By.linkText("Samsung galaxy s6");
 	By laptops=By.linkText("Laptops");
 	By laptop=By.linkText("Sony vaio i5");
-	By addtocart=By.xpath("//a[@class='btn btn-success btn-lg']");
+	By addtocart=By.cssSelector("a[class='btn btn-success btn-lg']");
 	By nameof_user=By.id("nameofuser");
 	By logout=By.id("logout2");
 	
